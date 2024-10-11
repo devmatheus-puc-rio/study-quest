@@ -5,23 +5,37 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Uma plataforma de divulgação de planos de estudo para aqueles que encaram o estudo como uma aventura! ">
         <title>StudyQuest - Home Page</title>
+        <link rel="stylesheet" href="HomePage\HomePageStyle.css">
     </head>
     <body>
-        <h1><strong>Home page</strong></h1>
-        <a href="/index.html"><img src="" alt="Logo StudyQuest"></a>
-        <p>StudyQuest</p>
-        <form action= "" method = "GET">
-            <label>Search</label>
-            <input type="text" name="seachText">
-        </form>
-        <p>Para quem encara os estudos como uma aventura</p>
-        <ul>
-            <li>Categoria 1</li>
-            <li>Categoria 2</li>
-            <li>Categoria 3</li>
-            <li>Categoria 4</li>
-        </ul>
-        <h2>Plano de estudos populares</h2>
+        <header>
+            <div class="container">
+                <a href="index.html">
+                    <img src="HomePage\fodasse.png" alt="Logo StudyQuest">
+                </a>
+                <p id="nomeSite">StudyQuest</p>
+                <div class="searchComponents">
+                    <img id="lupa" src="HomePage\lupa.png" alt="Lupa">
+                    <form id="searchBar" action= "" method = "GET" >
+                        <input type="text" name="seachText" placeholder="Pesquise o nome do plano ou categoria">
+                    </form>
+                </div>
+                <button>
+                    <img src="HomePage\perfil.png" alt="Logo StudyQuest">
+                </button>
+            </div>
+            <div class="categoria">
+                <p id="slogan">Para quem encara os estudos como uma aventura</p>
+                <ul>
+                    <li><button>Categoria 1</button></li>
+                    <li><button>Categoria 2</button></li>
+                    <li><button>Categoria 3</button></li>
+                    <li><button>Categoria 4</button></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <h2>Plano de estudos populares</h2>
             <div lista 1 de Planos>
                 <div Plano 1>
                     <img src="" alt="Foto plano 1">
@@ -93,14 +107,17 @@
                     <p class="Categoria">Categoria</p>
                 </div>
             </div>
-        <h2>Contatos</h2>
+        </main>
+        <footer>
+            <h2>Contatos</h2>
             <img src="" alt="Logo StudyQuest">
-            <a href="/index.html">StudyQuest</a>
+            <a href="index.html">StudyQuest</a>
             <img src="" alt="Logo Gmail">
             <a href="mailto:iquecarvalho2005@gmail.com">Email</a>
             <img src="" alt="Logo Instagram">
             <a href="">Instagram</a>
             <img src="" alt="Logo Facebook">
             <a href="">Facebook</a>
+        </footer>
     </body>
 </html>
