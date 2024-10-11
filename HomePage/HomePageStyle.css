@@ -1,0 +1,155 @@
+header
+{
+    top: 0;
+    left: 0;
+    background: #16423C;
+    width: 100%;
+    padding: 0%;
+}
+
+header p
+{
+    color: #C4DAD2;
+}
+
+header ul
+{
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-content: center;
+    background-color: #6A9C89;
+    margin: 20px 20px 100px 20px;
+    border-radius: 20px;
+}
+
+header ul li
+{
+    width: 100px;
+    height: 35px;
+    display: inline-block;
+    padding: 0 20px;
+    background: #C4DAD2;
+    border-radius: 20px;
+    color: #000000;
+    text-align: center;
+    align-content: center;
+    margin: 10px;
+    pointer-events: none;
+}
+
+header ul li button
+{
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+    pointer-events: auto;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29.05px;
+    text-align: left;
+
+}
+
+.categoria
+{
+    height: 150px;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container input
+{
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.05px;
+    text-align: left;
+    background: #C4DAD2;
+    width: 500px;
+    height: 35px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border: 0;
+    text-indent: 40px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.searchComponents
+{
+    display: flex;
+    position: relative;  
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.searchComponents img
+{
+    position: absolute;   
+    width: 25px;
+    height: 25px;
+    pointer-events: none;
+}
+
+.container button
+{
+    margin-left: auto;
+    background-color: transparent;
+    pointer-events: auto;
+    cursor: pointer;
+    border: 0;
+}
+
+.container button img
+{
+    pointer-events: none;
+}
+
+#nomeSite
+{
+    font-family: Inknut Antiqua;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 92.84px;
+    text-align: left;
+    color: #6A9C89;
+    display: inline;
+    align-content: center;
+    margin: 10px auto 10px 0;
+}
+
+#slogan
+{
+    font-family: Jacques Francois Shadow;
+    font-size: 36px;
+    margin: 0;
+    text-align: center;
+}
+
+header img
+{
+    width: 75px;
+    height: 75px;
+    gap: 0px;
+    opacity: 0px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+body
+{
+    background-color: #6A9C89;
+    margin: 0;
+    padding: 0;
+}
