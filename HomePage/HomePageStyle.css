@@ -73,6 +73,14 @@ header ul li button
     display: flex;
     align-content: center;
     text-decoration: none;
+    padding-top: 20px;
+}
+
+.container a
+{
+    display: flex;
+    align-content: center;
+    text-decoration: none;
 }
 
 .container input
