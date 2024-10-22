@@ -1,0 +1,17 @@
+Requisitos Funcionais:
+
+[RF1] O sistema deve permitir que uma pessoa realize cadastro no site.
+
+[RF2] O sistema deve permitir que um Usuário acesse sua conta.
+
+[RF3] O sistema deve permitir que um Usuário veja seus planos.
+
+[RF4] O sistema deve permitir que um Usuário crie um plano de estudos.
+
+
+Requisitos Não Funcionais:
+
+[RNF1] O sistema deverá gerar o resultado da busca por curso em menos de 1 segundo.
+
+[RNF2] O sistema deve ser compatíel em dispositivos móveis.
+

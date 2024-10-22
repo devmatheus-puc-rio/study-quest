@@ -31,19 +31,19 @@
                     <label for="campo-senha-cadastro">Senha</label>
                     <input type="password" name="cadastro" id="campo-senha-cadastro" class="campo-inserir" placeholder="Crie uma senha"
                         required>
-                    <p>Sua senha deve conter pelo menos 8 caracteres e uma combinação de letras e números.</p>
+                    <p class="aviso-senha">Sua senha deve conter pelo menos 8 caracteres e uma combinação de letras e números.</p>
                 </div>
 
                 <div class="campo-informacao">
                     <label for="campo-confirma-senha-cadastro">Confirmar senha</label>
                     <input type="password" name="cadastro" id="campo-confirma-senha-cadastro" class="campo-inserir"
                         placeholder="Crie uma senha" required>
-                    <p>Sua senha deve conter pelo menos 8 caracteres e uma combinação de letras e números.</p>
+                    <p class="aviso-senha">Sua senha deve conter pelo menos 8 caracteres e uma combinação de letras e números.</p>
                 </div>
 
                 <div class="campo-informacao">
                     <label for="campo-curso-cadastro">Curso</label>
-                    <select name="cadastro" id="campo-curso-cadastro" class="campo-inserir">
+                    <select name="cadastro" id="campo-curso-cadastro" class="campo-selecionar">
                         <option value="">Selecione seu curso</option>
                         <option value="ciencia-da-computacao">Ciência da Computação</option>
                         <option value="engenharia-da-computacao">Engenharia da Computação</option>
@@ -56,8 +56,8 @@
 
                 <div class="campo-informacao">
                     <label for="campo-periodo-cadastro">Período</label>
-                    <select name="cadastro" id="campo-periodo-cadastro" class="campo-inserir">
-                        <option value="">Selecione seu período</option>
+                    <select name="cadastro" id="campo-periodo-cadastro" class="campo-selecionar">
+                        <option value="" class="selecione-seu-periodo">Selecione seu período</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -90,7 +90,7 @@
 
                 <div class="encerrar-cadastro">
                     <button class="botao-criar-conta">Criar conta</button>
-                    <p>Já tem uma conta? <a href="../login/login.html">Fazer login</a></p>
+                    <p class="texto-ja-tem-conta">Já tem uma conta? <a href="../login/login.html" class="link-fazer-login">Fazer login</a></p>
                 </div>
             </form>
         </section>
