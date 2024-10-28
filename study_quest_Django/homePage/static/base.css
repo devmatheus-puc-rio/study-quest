@@ -96,17 +96,8 @@ header ul li button
     display: flex;
     align-content: center;
     text-decoration: none;
-    padding-top: 20px;
 }
 
-.container a
-{
-    display: flex;
-    align-content: center;
-    text-decoration: none;
-}
-
-.container .searchComponents input
 .container .searchComponents input
 {
     font-family: Inter;
@@ -118,19 +109,11 @@ header ul li button
     width: 90%;
     height: 30px;
     border-radius: 10px;
-    width: 90%;
-    height: 30px;
-    border-radius: 10px;
     box-shadow: 0px 4px 4px 0px #00000040;
     border: 0;
     text-indent: 45px;
-    text-indent: 45px;
     padding: 0;
-    background-image: url('lupa.png');
-    background-size: 25px 25px;
-    background-position: 10px 50%;
-    background-repeat: no-repeat;
-    background-image: url('lupa.png');
+    background-image: url("/static/images/lupa.png");
     background-size: 25px 25px;
     background-position: 10px 50%;
     background-repeat: no-repeat;
@@ -175,11 +158,6 @@ header ul li button
     border-radius: 0px;
 }
 
-.logo
-{
-    border-radius: 0px;
-}
-
 header img
 {
     width: 75px;
@@ -195,97 +173,6 @@ body
     background-color: #6A9C89;
     margin: 0;
     padding: 0;
-}
-
-main h2
-{
-    font-family: Kufam;
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 62.4px;
-    text-align: left;
-    margin-left: 20px;
-}
-
-main .Roll
-{
-    display: flex;
-    align-items: center;
-    background: #C4DAD2;
-    height: 375px;
-    margin: 75px 50px 75px 50px;    
-    border-radius: 30px;
-    overflow: hidden;
-}
-
-main .Roll .plano
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 9%;
-}
-
-main .Roll .plano a h3
-main .Roll .plano a h3
-{
-    color: #000000;
-    color: #000000;
-    font-family: Inter;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 29.05px;
-    text-align: left;
-    margin: 10px;
-}
-
-main .Roll .plano a
-{
-    text-decoration: none;
-}
-
-main .Roll .plano a
-{
-    text-decoration: none;
-}
-
-.Visualizar, .Favoritar
-{
-    display: flex;
-    align-items: center;
-    margin: 5px;
-}
-
-.Favoritar img, .Visualizar img
-{
-    height: 30px;
-    width: 30px;
-    margin-right: 7px;
-}
-
-.Visualizar img
-{
-    height: 22px;
-}
-
-.Visualizar p, .Favoritar p
-{
-    font-family: Inter;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21.78px;
-    text-align: left;
-}
-
-
-.Visualizar p, .Favoritar p
-{
-    margin: 0px;
-}
-
-.Estrelas img
-{
-    margin: 3px;
 }
 
 footer
