@@ -1,0 +1,83 @@
+main h2
+{
+    font-family: Kufam;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 62.4px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+main .Roll
+{
+    display: flex;
+    align-items: center;
+    background: #C4DAD2;
+    height: 375px;
+    margin: 75px 50px 75px 50px;    
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+main .Roll .plano
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 9%;
+}
+
+main .Roll .plano a h3
+{
+    color: #000000;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.05px;
+    text-align: left;
+    margin: 10px;
+}
+
+main .Roll .plano a
+{
+    text-decoration: none;
+}
+
+.Visualizar, .Favoritar
+{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.Favoritar img, .Visualizar img
+{
+    height: 30px;
+    width: 30px;
+    margin-right: 7px;
+}
+
+.Visualizar img
+{
+    height: 22px;
+}
+
+.Visualizar p, .Favoritar p
+{
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.78px;
+    text-align: left;
+}
+
+
+.Visualizar p, .Favoritar p
+{
+    margin: 0px;
+}
+
+.Estrelas img
+{
+    margin: 3px;
+}

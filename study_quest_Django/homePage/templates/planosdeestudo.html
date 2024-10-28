@@ -1,0 +1,11 @@
+{% extends "base.html" %} {% block content %}
+<h1>Planos</h1>
+<ul>
+    {% for plano in planos %}
+    <li>
+        {{ plano.titulo }}
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

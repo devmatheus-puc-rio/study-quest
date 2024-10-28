@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Uma plataforma de divulgação de planos de estudo para aqueles que encaram o estudo como uma aventura! ">
+        <title>StudyQuest - Home Page</title>
+        <link rel="stylesheet" href="{% static 'base.css'%}">
+        {% block style %} {% endblock %}
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logodiv">
+                    <a href="index.html">
+                        <img src="{% static 'images/logo-studyquestbranca.png' %}" class="logo" alt="Logo StudyQuest">
+                        <p id="nomeSite">StudyQuest</p>
+                    </a>
+                </div>
+                <div class="searchComponents">
+                    <input type="search" name="seachText" placeholder="Pesquise o nome do plano ou categoria">
+                </div>
+                <div class="butaoperfil">
+                    <button>
+                        <img src="{% static 'images/perfil.png' %}" alt="Butao perfil">
+                    </button>
+                </div>
+            </div>
+            <div class="categoria">
+                <p id="slogan">Para quem encara os estudos como uma aventura</p>
+                <ul>
+                    <li><button>Categoria 1</button></li>
+                    <li><button>Categoria 2</button></li>
+                    <li><button>Categoria 3</button></li>
+                    <li><button>Categoria 4</button></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            {% block content %}A{% endblock %}
+        </main>
+        <footer>
+            <h2>Contatos</h2>
+            <div class="bottomContainer">
+                <a class="item1" href="mailto:">
+                    <img src="{% static 'images/logo-gmail.png' %}" alt="Logo Gmail">
+                    <p>Email</p>
+                </a>
+                <a class="item2" href="index.html">
+                    <img src="{% static 'images/logo-studyquestbranca.png' %}" class="logo" alt="Logo StudyQuest">
+                    <p>StudyQuest</p>
+                </a>
+                <a class="item3" href="">
+                    <img src="{% static 'images/logo-instagram.png' %}" alt="Logo Instagram">
+                    <p>Instagram</p>
+                </a>
+                <a class="item4" href="">
+                    <img src="{% static 'images/logo-facebook.png' %}" alt="Logo Facebook">
+                    <p>Facebook</p>
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>
