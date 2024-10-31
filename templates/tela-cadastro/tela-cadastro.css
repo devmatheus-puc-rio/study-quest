@@ -15,37 +15,20 @@
     align-items: center;
     color: #1E1E1E;
     font-family: "Inter", sans-serif;
-    font-weight: 400;
 }
 
-.logar-conta {
+.criar-conta {
     margin: 1%;
     width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    gap: 5%;
 }
 
-.titulo-logar-conta {
+.titulo-crie-conta {
     font-size: 3rem;
     padding-bottom: 2%;
-    display: flex;
-    justify-content: center;
-}
-
-.propriedades-senha {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 5%;
-    font-size: 0.75rem;
-}
-
-.esqueci-senha {
-    color: #1E1E1E;
-    font-weight: 700;
-    text-decoration: underline;
 }
 
 .campo-informacao {
@@ -55,12 +38,16 @@
 }
 
 
-#formulario-login {
+#formulario-cadastro {
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
     gap: 1.5rem;
     height: 80%;
+}
+
+.aviso-senha {
+    font-size: 0.75rem;
 }
 
 .campo-inserir, .campo-selecionar {
@@ -69,39 +56,37 @@
     border-radius: 12px;
 }
 
-.confirmacao-logar-conta {
+.campo-inserir::placeholder {
+    font-family: 'Inter', sans-serif;
+}
+
+.confirmacao-criar-conta {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 20%;
 }
 
-.secao-nao-sou-robo {
-    display: flex;
-    justify-content: center;
-}
-
-.campo-nao-sou-robo {
-    display: flex;
-    width: 70%;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5%;
+.captcha-cadastro {
     font-size: 1rem;
+    display: flex;
+    width: 50%;
     border: solid #333333 1px;
     border-radius: 18px;
+    align-items: center;
+    justify-content: space-between;
     padding: 1% 3%;
 }
 
 .confirma-nao-sou-robo {
     display: flex;
-    width: 70%;
-    gap: 2%;
+    width: 60%;
+    gap: 5%;
 }
 
 .logo-recaptcha {
     width: 15%;
-    height: 100%;
+    height: 10%;
 }
 
 .aceita-termos-de-uso {
@@ -113,7 +98,12 @@
     font-size: 0.75rem;
 }
 
-.encerrar-login {
+.termos-de-uso {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.encerrar-cadastro {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -122,16 +112,16 @@
     font-size: 1rem;
 }
 
-.botao-fazer-login {
+.botao-criar-conta {
     background-color: #2C2C2C;
     color: #F5F5F5;
     width: 100%;
-    height: 20%;
+    height: 60%;
     border-radius: 1rem;
     font-size: 1rem;
 }
 
-.link-criar-cadastro {
+.link-fazer-login {
     color: #1E1E1E;
     font-weight: 700;
     text-decoration: underline;
