@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyQuest - Login</title>
+
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="pagina">
+        <section class="logar-conta">
+            <h1 class="titulo-logar-conta">Login</h1>
+
+            <form action="login.html" method="get" id="formulario-login">
+                <div class="campo-informacao">
+                    <label for="campo-email-login">Email</label>
+                    <input type="text" name="campo-email-login" id="campo-email-login" class="campo-inserir" autocomplete="email" placeholder="Digite seu endereço de email" required>
+                </div>
+
+                <div class="campo-informacao">
+                    <label for="campo-senha-login">Senha</label>
+                    <input type="password" name="campo-senha-login" id="campo-senha-login" class="campo-inserir" placeholder="Digite sua senha" required>
+                </div>
+
+                <div class="propriedades-senha">
+                    <div class="marcar-salvar-senha">
+                        <input type="checkbox" name="checkbox-salvar-senha" id="checkbox-salvar-senha">
+                        <label for="checkbox-salvar-senha">Salvar a senha?</label>
+                    </div>
+
+                    <a href="" class="esqueci-senha">Esqueceu a senha?</a>
+                </div>
+                
+                <div class="secao-nao-sou-robo">
+                    <div class="campo-nao-sou-robo">
+                        <div class="confirma-nao-sou-robo">
+                            <input type="checkbox" name="cadastro" id="checkbox-captcha">
+                            <label for="checkbox-captcha">Não sou um robô</label>
+                        </div>
+    
+                        <img src="../images/logo-recaptcha.png" alt="Logo do reCAPTCHA" class="logo-recaptcha">
+                    </div>
+                </div>
+
+                <div class="encerrar-login">
+                    <button class="botao-fazer-login">Login</button>
+                    <p class="texto-ja-tem-conta">Ainda não tem possui conta? <a href="../cadastro/cadastro.html" class="link-criar-cadastro">Cadastre-se</a></p>
+                </div>
+            </form>
+        </section>
+        <img src="../images/logo-studyquest.png" alt="Logo StudyQuest" class="logo-projeto">
+    </div>
+</body>
+</html>
