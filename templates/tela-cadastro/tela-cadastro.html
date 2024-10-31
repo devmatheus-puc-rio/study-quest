@@ -1,4 +1,3 @@
-<<<<<<< HEAD:cadastro/cadastro.html
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -7,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudyQuest - Cadastro</title>
 
-    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="tela-cadastro.css">
 </head>
 
 <body>
@@ -15,7 +14,7 @@
         <section class="criar-conta">
             <h1 class="titulo-crie-conta">Crie sua conta</h1>
 
-            <form action="cadastro.html" method="get" id="formulario-cadastro">
+            <form action="tela-cadastro.html" method="get" id="formulario-cadastro">
                 <div class="campo-informacao">
                     <label for="campo-nome-cadastro">Nome</label>
                     <input type="text" name="cadastro" id="campo-nome-cadastro" class="campo-inserir" autocomplete="name"
@@ -24,8 +23,7 @@
 
                 <div class="campo-informacao">
                     <label for="campo-email-cadastro">Endereço de email</label>
-                    <input type="text" name="cadastro" id="campo-email-cadastro" class="campo-inserir" autocomplete="email"
-                        placeholder="Digite seu endereço de email" required>
+                    <input type="text" name="cadastro" id="campo-email-cadastro" class="campo-inserir" autocomplete="email" placeholder="Digite seu endereço de email" required>
                 </div>
 
                 <div class="campo-informacao">
@@ -80,7 +78,7 @@
                             <label for="checkbox-captcha">Não sou um robô</label>
                         </div>
 
-                        <img src="../images/logo-recaptcha.png" alt="Logo do reCAPTCHA" class="logo-recaptcha">
+                        <img src="../../images/logo-recaptcha.png" alt="Logo do reCAPTCHA" class="logo-recaptcha">
                     </div>
 
                     <div class="aceita-termos-de-uso">
@@ -95,109 +93,6 @@
                 </div>
             </form>
         </section>
-        <img src="../images/logo-studyquest.png" alt="Logo StudyQuest" class="logo-projeto">
+        <img src="../../images/logo-studyquestbranca.png" alt="Logo StudyQuest" class="logo-projeto">
     </div>
 </body>
-=======
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StudyQuest - Cadastro</title>
-
-    <link rel="stylesheet" href="cadastro.css">
-</head>
-
-<body>
-    <div class="pagina">
-        <section class="criar-conta">
-            <h1 class="titulo-crie-conta">Crie sua conta</h1>
-
-            <form action="cadastro.html" method="get" id="formulario-cadastro">
-                <div class="campo-informacao">
-                    <label for="campo-nome-cadastro">Nome</label>
-                    <input type="text" name="cadastro" id="campo-nome-cadastro" class="campo-inserir" autocomplete="name"
-                        placeholder="Digite seu nome" required>
-                </div>
-
-                <div class="campo-informacao">
-                    <label for="campo-email-cadastro">Endereço de email</label>
-                    <input type="text" name="cadastro" id="campo-email-cadastro" class="campo-inserir" autocomplete="email"
-                        placeholder="Digite seu endereço de email" required>
-                </div>
-
-                <div class="campo-informacao">
-                    <label for="campo-senha-cadastro">Senha</label>
-                    <input type="password" name="cadastro" id="campo-senha-cadastro" class="campo-inserir" placeholder="Crie uma senha"
-                        required>
-                    <p class="aviso-senha">Sua senha deve conter pelo menos 8 caracteres e uma combinação de letras e números.</p>
-                </div>
-
-                <div class="campo-informacao">
-                    <label for="campo-confirma-senha-cadastro">Confirmar senha</label>
-                    <input type="password" name="cadastro" id="campo-confirma-senha-cadastro" class="campo-inserir"
-                        placeholder="Crie uma senha" required>
-                    <p class="aviso-senha">Sua senha deve conter pelo menos 8 caracteres e uma combinação de letras e números.</p>
-                </div>
-
-                <div class="campo-informacao">
-                    <label for="campo-curso-cadastro">Curso</label>
-                    <select name="cadastro" id="campo-curso-cadastro" class="campo-selecionar">
-                        <option value="">Selecione seu curso</option>
-                        <option value="ciencia-da-computacao">Ciência da Computação</option>
-                        <option value="engenharia-da-computacao">Engenharia da Computação</option>
-                        <option value="matematica">Matemática</option>
-                        <option value="administracao">Administração</option>
-                        <option value="economia">Economia</option>
-                    </select>
-                </div>
-
-
-                <div class="campo-informacao">
-                    <label for="campo-periodo-cadastro">Período</label>
-                    <select name="cadastro" id="campo-periodo-cadastro" class="campo-selecionar">
-                        <option value="" class="selecione-seu-periodo">Selecione seu período</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="acima-de-10">Acima de 10</option>
-                    </select>
-                </div>
-
-                <div class="confirmacao-criar-conta">
-                    <div class="captcha-cadastro">
-                        <div class="confirma-nao-sou-robo">
-                            <input type="checkbox" name="cadastro" id="checkbox-captcha">
-                            <label for="checkbox-captcha">Não sou um robô</label>
-                        </div>
-
-                        <img src="../images/logo-recaptcha.png" alt="Logo do reCAPTCHA" class="logo-recaptcha">
-                    </div>
-
-                    <div class="aceita-termos-de-uso">
-                        <input type="checkbox" name="cadastro" id="checkbox-termos-de-uso">
-                        <label for="checkbox-termos-de-uso">Você aceita os <span class="termos-de-uso">termos de uso</span> do StudyQuest</label>
-                    </div>
-                </div>
-
-                <div class="encerrar-cadastro">
-                    <button class="botao-criar-conta">Criar conta</button>
-                    <p class="texto-ja-tem-conta">Já tem uma conta? <a href="../login/login.html" class="link-fazer-login">Fazer login</a></p>
-                </div>
-            </form>
-        </section>
-        <img src="../images/logo-studyquest.png" alt="Logo StudyQuest" class="logo-projeto">
-    </div>
-</body>
-
->>>>>>> branch-matheus:templates/tela-cadastro/tela-cadastro.html
-</html>
