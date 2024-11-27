@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -6,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudyQuest - Cadastro</title>
 
-    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="{% static 'styles/tela-cadastro.css' %}">
 </head>
 
 <body>
@@ -79,7 +80,7 @@
                             <label for="checkbox-captcha">Não sou um robô</label>
                         </div>
 
-                        <img src="../images/logo-recaptcha.png" alt="Logo do reCAPTCHA" class="logo-recaptcha">
+                        <img src="{% static '/images/logo-recaptcha.png' %}" alt="Logo do reCAPTCHA" class="logo-recaptcha">
                     </div>
 
                     <div class="aceita-termos-de-uso">
@@ -94,7 +95,7 @@
                 </div>
             </form>
         </section>
-        <img src="../images/logo-studyquest.png" alt="Logo StudyQuest" class="logo-projeto">
+        <img src="{% static '/images/logo-studyquestbranca.png' %}" alt="Logo StudyQuest" class="logo-projeto">
     </div>
 </body>
 
