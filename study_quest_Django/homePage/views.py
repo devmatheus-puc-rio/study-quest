@@ -3,7 +3,8 @@ from .models import PlanoDeEstudo
 
 # Create your views here.
 def home(request):
-    return render(request, "home.html")
+    items = PlanoDeEstudo.objects.all()
+    return render(request, "home.html", {"planos": items})
 
 def planos(request):
     items = PlanoDeEstudo.objects.all()

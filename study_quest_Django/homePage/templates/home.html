@@ -6,200 +6,80 @@
 {% block content %} 
 <h2>Plano de estudos populares</h2>
     <div class = "Roll">
-        <div class = "plano">
-            <a href = "">
-                <img src="{% static 'images/livros.png' %}" alt="Foto plano">
-                <h3 class="Titulo">Plano X</h3>
-            </a>
-            <div class="Visualizar">
-                <img src="{% static 'images/olho.png' %}" alt="Foto plano">
-                <p>x visualizaram</p>
+        {% for plano in planos %}
+            <div class = "plano">
+                <a href = "">
+                    <img src="{% static 'images/livros.png' %}" alt="Foto plano">
+                    <h3 class="Titulo">{{plano.titulo}}</h3>
+                </a>
+                <div class="Visualizar">
+                    <img src="{% static 'images/olho.png' %}" alt="Foto plano">
+                    <p>{{plano.nVisualizacoes}} visualizaram</p>
+                </div>
+                <div class="Favoritar">
+                    <img src="{% static 'images/coracao.png' %}" alt="Foto plano">
+                    <p>{{plano.nFavoritos}} favoritaram</p>
+                </div>
+                <div class="Estrelas">
+                    <img src="{% static 'images/estrela.png' %}" alt="Estrela1">
+                    <img src="{% static 'images/estrela.png' %}" alt="Estrela2">
+                    <img src="{% static 'images/estrela.png' %}" alt="Estrela3">
+                    <img src="{% static 'images/estrela.png' %}" alt="Estrela4">
+                    <img src="{% static 'images/estrela.png' %}" alt="Estrela5">
+                </div>
             </div>
-            <div class="Favoritar">
-                <img src="{% static 'images/coracao.png' %}" alt="Foto plano">
-                <p>y favoritaram</p>
-            </div>
-            <div class="Estrelas">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela1">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela2">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela3">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela4">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela5">
-            </div>
-        </div>
-        <div class = "plano">
-            <a href = "">
-                <img src="{% static 'images/livros.png' %}" alt="Foto plano">
-                <h3 class="Titulo">Plano X</h3>
-            </a>
-            <div class="Visualizar">
-                <img src="{% static 'images/olho.png' %}" alt="Foto plano">
-                <p class="Autor">x visualizaram</p>
-            </div>
-            <div class="Favoritar">
-                <img src="{% static 'images/coracao.png' %}" alt="Foto plano">
-                <p class="Autor">y favoritaram</p>
-            </div>
-            <div class="Estrelas">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela1">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela2">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela3">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela4">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela5">
-            </div>
-        </div>
-        <div class = "plano">
-            <a href = "">
-                <img src="{% static 'images/livros.png' %}" alt="Foto plano">
-                <h3 class="Titulo">Plano X</h3>
-            </a>
-            <div class="Visualizar">
-                <img src="{% static 'images/olho.png' %}" alt="Foto plano">
-                <p class="Autor">x visualizaram</p>
-            </div>
-            <div class="Favoritar">
-                <img src="{% static 'images/coracao.png' %}" alt="Foto plano">
-                <p class="Autor">y favoritaram</p>
-            </div>
-            <div class="Estrelas">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela1">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela2">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela3">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela4">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela5">
-            </div>
-        </div>
+        {% endfor %}
     </div>
     <h2>Plano de estudos bem avaliados</h2>
     <div class = "Roll">
-        <div class = "plano">
-            <a href = "">
-                <img src="{% static 'images/livros.png' %}" alt="Foto plano">
-                <h3 class="Titulo">Plano X</h3>
-            </a>
-            <div class="Visualizar">
-                <img src="{% static 'images/olho.png' %}" alt="Foto plano">
-                <p class="Autor">x visualizaram</p>
+        {% for plano in planos %}
+            <div class = "plano">
+                <a href = "">
+                    <img src="{% static 'images/livros.png' %}" alt="Foto plano">
+                    <h3 class="Titulo">{{plano.titulo}}</h3>
+                </a>
+                <div class="Visualizar">
+                    <img src="{% static 'images/olho.png' %}" alt="Foto plano">
+                    <p>{{plano.nVisualizacoes}} visualizaram</p>
+                </div>
+                <div class="Favoritar">
+                    <img src="{% static 'images/coracao.png' %}" alt="Foto plano">
+                    <p>{{plano.nFavoritos}} favoritaram</p>
+                </div>
+                <div class="Estrelas">
+                    <img src="{% static 'images/estrela.png' %}" alt="Estrela1">
+                    <img src="{% static 'images/estrela.png' %}" alt="Estrela2">
+                    <img src="{% static 'images/estrela.png' %}" alt="Estrela3">
+                    <img src="{% static 'images/estrela.png' %}" alt="Estrela4">
+                    <img src="{% static 'images/estrela.png' %}" alt="Estrela5">
+                </div>
             </div>
-            <div class="Favoritar">
-                <img src="{% static 'images/coracao.png' %}" alt="Foto plano">
-                <p class="Autor">y favoritaram</p>
-            </div>
-            <div class="Estrelas">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela1">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela2">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela3">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela4">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela5">
-            </div>
-        </div>
-        <div class = "plano">
-            <a href = "">
-                <img src="{% static 'images/livros.png' %}" alt="Foto plano">
-                <h3 class="Titulo">Plano X</h3>
-            </a>
-            <div class="Visualizar">
-                <img src="{% static 'images/olho.png' %}" alt="Foto plano">
-                <p class="Autor">x visualizaram</p>
-            </div>
-            <div class="Favoritar">
-                <img src="{% static 'images/coracao.png' %}" alt="Foto plano">
-                <p class="Autor">y favoritaram</p>
-            </div>
-            <div class="Estrelas">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela1">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela2">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela3">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela4">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela5">
-            </div>
-        </div>
-        <div class = "plano">
-            <a href = "">
-                <img src="{% static 'images/livros.png' %}" alt="Foto plano">
-                <h3 class="Titulo">Plano X</h3>
-            </a>
-            <div class="Visualizar">
-                <img src="{% static 'images/olho.png' %}" alt="Foto plano">
-                <p class="Autor">x visualizaram</p>
-            </div>
-            <div class="Favoritar">
-                <img src="{% static 'images/coracao.png' %}" alt="Foto plano">
-                <p class="Autor">y favoritaram</p>
-            </div>
-            <div class="Estrelas">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela1">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela2">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela3">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela4">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela5">
-            </div>
-        </div>
+        {% endfor %}
     </div>
     <h2>Plano de estudos de amigos</h2>
     <div class = "Roll">
-        <div class = "plano">
-            <a href = "">
-                <img src="{% static 'images/livros.png' %}" alt="Foto plano">
-                <h3 class="Titulo">Plano X</h3>
-            </a>
-            <div class="Visualizar">
-                <img src="{% static 'images/olho.png' %}" alt="Foto plano">
-                <p class="Autor">x visualizaram</p>
+        {% for plano in planos %}
+            <div class = "plano">
+                <a href = "">
+                    <img src="{% static 'images/livros.png' %}" alt="Foto plano">
+                    <h3 class="Titulo">{{plano.titulo}}</h3>
+                </a>
+                <div class="Visualizar">
+                    <img src="{% static 'images/olho.png' %}" alt="Foto plano">
+                    <p>{{plano.nVisualizacoes}} visualizaram</p>
+                </div>
+                <div class="Favoritar">
+                    <img src="{% static 'images/coracao.png' %}" alt="Foto plano">
+                    <p>{{plano.nFavoritos}} favoritaram</p>
+                </div>
+                <div class="Estrelas">
+                    <img src="{% static 'images/estrela.png' %}" alt="Estrela1">
+                    <img src="{% static 'images/estrela.png' %}" alt="Estrela2">
+                    <img src="{% static 'images/estrela.png' %}" alt="Estrela3">
+                    <img src="{% static 'images/estrela.png' %}" alt="Estrela4">
+                    <img src="{% static 'images/estrela.png' %}" alt="Estrela5">
+                </div>
             </div>
-            <div class="Favoritar">
-                <img src="{% static 'images/coracao.png' %}" alt="Foto plano">
-                <p class="Autor">y favoritaram</p>
-            </div>
-            <div class="Estrelas">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela1">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela2">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela3">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela4">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela5">
-            </div>
-        </div>
-        <div class = "plano">
-            <a href = "">
-                <img src="{% static 'images/livros.png' %}" alt="Foto plano">
-                <h3 class="Titulo">Plano X</h3>
-            </a>
-            <div class="Visualizar">
-                <img src="{% static 'images/olho.png' %}" alt="Foto plano">
-                <p class="Autor">x visualizaram</p>
-            </div>
-            <div class="Favoritar">
-                <img src="{% static 'images/coracao.png' %}" alt="Foto plano">
-                <p class="Autor">y favoritaram</p>
-            </div>
-            <div class="Estrelas">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela1">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela2">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela3">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela4">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela5">
-            </div>
-        </div>
-        <div class = "plano">
-            <a href = "">
-                <img src="{% static 'images/livros.png' %}" alt="Foto plano">
-                <h3 class="Titulo">Plano X</h3>
-            </a>
-            <div class="Visualizar">
-                <img src="{% static 'images/olho.png' %}" alt="Foto plano">
-                <p class="Autor">x visualizaram</p>
-            </div>
-            <div class="Favoritar">
-                <img src="{% static 'images/coracao.png' %}" alt="Foto plano">
-                <p class="Autor">y favoritaram</p>
-            </div>
-            <div class="Estrelas">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela1">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela2">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela3">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela4">
-                <img src="{% static 'images/estrela.png' %}" alt="Estrela5">
-            </div>
-        </div>
+        {% endfor %}
     </div>
 {% endblock %}

@@ -18,6 +18,8 @@ class PlanoDeEstudo(models.Model):
     avaliacao = models.FloatField()
     visibilidade = models.CharField(max_length=50)
     data = models.DateField(max_length=10)
+    nVisualizacoes = models.IntegerField(default=0)
+    nFavoritos = models.IntegerField(default=0)
 
     def __str__(self):
         return self.titulo
