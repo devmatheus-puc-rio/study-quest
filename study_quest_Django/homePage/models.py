@@ -12,7 +12,7 @@ class Usuario(models.Model):
         return self.nome
 
 class PlanoDeEstudo(models.Model):
-    id = models.IntegerField()
+    identificacao = models.IntegerField()
     titulo = models.CharField(max_length=200)
     descricao = models.CharField(max_length=500)
     avaliacao = models.FloatField()
@@ -47,7 +47,7 @@ class MaterialDeEstudo(models.Model):
         return self.titulo
     
 class Arquivo(models.Model):
-    id = models.IntegerField()
+    identificacao = models.IntegerField()
     link = models.FilePathField()
 
     def __str__(self):
@@ -58,14 +58,14 @@ class Quizzes(models.Model):
         return self
     
 class Pergunta(models.Model):
-    id = models.IntegerField()
+    identificacao = models.IntegerField()
     texto = models.CharField(max_length=500)
 
     def __str__(self):
         return self.texto
     
-class Pergunta(models.Model):
-    id = models.IntegerField()
+class Resposta(models.Model):
+    identificacao = models.IntegerField()
     texto = models.CharField(max_length=500)
 
     def __str__(self):
