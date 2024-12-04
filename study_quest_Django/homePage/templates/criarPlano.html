@@ -1,0 +1,45 @@
+{% extends "base.html" %} 
+{% load static %}
+{% block style %} 
+    <link rel="stylesheet" href="{% static 'criarPlano.css'%}">
+{% endblock %}
+{% block content %} 
+<form action="criarPlano.html" method="get" id="criar-Plano">
+    <div class="sidebyside">
+        <div class="bloco-esquerdo">
+            <div class="campo-informacao">
+                <label for="campo-imagem-plano">
+                    <p>Imagem do Plano</p>
+                    <img src="{% static 'images/upload_imagem.jpg' %}" class="campo-imagemplano" alt="Foto Plano">
+                </label>
+                <input type="file" name="criarplano" id="campo-imagem-plano" class="campo-inseririmagem" accept="image/png, image/jpeg">
+            </div>
+        </div>
+        <div class="bloco-direito">
+            <div class="campo-informacao">
+                <label for="campo-titulo-plano">Titulo do Plano</label>
+                <input type="text" name="criarplano" id="campo-titulo-plano" class="campo-inserirtexto" autocomplete="name"
+                    placeholder="Titulo do plano" required>
+            </div>
+            <div class="campo-informacao">
+                <label for="campo-descricao-plano">Descrição do Plano</label>
+                <textarea name="criarplano" id="campo-descricao-plano" class="campo-inserirtextoarea"
+                    placeholder="Descrição do plano"></textarea>
+            </div>
+            <div class="campo-informacao">
+                <label for="campo-visibilidade-plano">Visibilidade do Plano</label>
+                <select name="criarplano" id="campo-visibilidade-plano" class="campo-selecionar">
+                    <option value="0"><p>Privado</p></option>
+                    <option value="1"><p>Restrito</p></option>
+                    <option value="2"><p>Visivel</p></option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="encerrar-criarplano">
+        <button class="botao-salvar-plano">
+            <p>Salvar Plano</p>
+        </button>
+    </div>
+</form>
+{% endblock %}

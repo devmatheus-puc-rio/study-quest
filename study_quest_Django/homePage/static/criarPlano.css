@@ -1,0 +1,120 @@
+main form
+{
+    padding: 75px 50px 75px 50px;
+}
+
+main .bloco-esquerdo
+{
+    background-color: #16423C;
+    border-radius: 25px;
+    margin: 10px;
+    padding: 25px;
+    width: 40%;
+}
+
+main .bloco-direito
+{
+    background-color: #16423C;
+    border-radius: 25px;
+    margin: 10px;
+    padding: 25px;
+    width: 60%;
+}
+
+main .sidebyside
+{
+    display: flex;
+}
+
+main .campo-inseririmagem
+{
+    display: none;
+}
+
+main .campo-imagemplano
+{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 25px;
+}
+
+main label
+{
+    color: #C4DAD2;
+    font-size: 32px;
+}
+
+main p
+{
+    color: #C4DAD2;
+    font-size: 32px;
+    padding: 10px 10px 20px 10px;
+    margin: 0;
+}
+
+main .campo-informacao
+{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+main .campo-inserirtexto, main .campo-inserirtextoarea, main .campo-selecionar
+{
+    padding: 7px 20px 7px 20px;
+    height: 25px;
+    margin: 25px 10px 25px 10px;
+    border-radius: 7px;
+    border: none;
+    font-size: 16px;
+    font-family: Jacques Francois Shadow;
+}
+
+main .campo-inserirtexto
+{
+    max-width: 350px;
+}
+
+main .campo-inserirtextoarea
+{
+    height: 100px;
+}
+
+main .campo-selecionar
+{
+    height: 40px;
+    width: 200px;
+    font-family: Jacques Francois Shadow;
+}
+
+main .campo-selecionar p
+{
+    font-family: Jacques Francois Shadow;
+}
+
+main .encerrar-criarplano
+{
+    height: 50px;
+    width: 100%;
+    padding-top: 25px;
+}
+
+main .botao-salvar-plano
+{
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    background-color: #16423C;
+    color: #C4DAD2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .botao-salvar-plano p
+{
+    padding: 0;
+    text-align: center;
+    align-items: center;
+}

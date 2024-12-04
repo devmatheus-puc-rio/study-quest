@@ -6,7 +6,7 @@
 {% block content %} 
 <h2>Plano de estudos populares</h2>
     <div class = "Roll">
-        {% for plano in planos %}
+        {% for plano in planos1 %}
             <div class = "plano">
                 <a href = "">
                     <img src="{% static 'images/livros.png' %}" alt="Foto plano">
@@ -32,7 +32,7 @@
     </div>
     <h2>Plano de estudos bem avaliados</h2>
     <div class = "Roll">
-        {% for plano in planos %}
+        {% for plano in planos2 %}
             <div class = "plano">
                 <a href = "">
                     <img src="{% static 'images/livros.png' %}" alt="Foto plano">
@@ -58,7 +58,7 @@
     </div>
     <h2>Plano de estudos de amigos</h2>
     <div class = "Roll">
-        {% for plano in planos %}
+        {% for plano in planos3 %}
             <div class = "plano">
                 <a href = "">
                     <img src="{% static 'images/livros.png' %}" alt="Foto plano">

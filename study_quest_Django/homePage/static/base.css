@@ -38,23 +38,6 @@ header ul li
     pointer-events: none;
 }
 
-header ul li button
-{
-    width: 100px;
-    height: 35px;
-    text-align: center;
-    background-color: transparent;
-    cursor: pointer;
-    border: 0;
-    pointer-events: auto;
-    font-family: Inter;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 29.05px;
-    text-align: left;
-
-}
-
 .categoria
 {
     height: 150px;
@@ -272,4 +255,19 @@ footer h2
     line-height: 43.92px;
 
     color: #6A9C89;
+}
+
+header .botao_categoria
+{
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+    pointer-events: auto;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29.05px;
 }

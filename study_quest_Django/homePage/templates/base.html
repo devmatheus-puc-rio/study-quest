@@ -30,10 +30,9 @@
             <div class="categoria">
                 <p id="slogan">Para quem encara os estudos como uma aventura</p>
                 <ul>
-                    <li><button>Categoria 1</button></li>
-                    <li><button>Categoria 2</button></li>
-                    <li><button>Categoria 3</button></li>
-                    <li><button>Categoria 4</button></li>
+                    {% for categoria in categorias %}
+                        <li><button class="botao_categoria">{{ categoria.titulo }}</button></li>
+                    {% endfor %}
                 </ul>
             </div>
         </header>
