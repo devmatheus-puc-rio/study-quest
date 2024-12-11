@@ -1,4 +1,5 @@
 from django.shortcuts import render, HttpResponse
+from .forms import CriarPlanoForm
 from .models import PlanoDeEstudo
 from .models import Categoria
 import random
@@ -18,6 +19,20 @@ def planos(request):
     return render(request, "planosdeestudo.html", {"planos": items})
 
 def criarPlanos(request):
-    categorias = list(Categoria.objects.all())
-    categorias = random.sample(categorias, 5)
-    return render(request, "criarPlano.html", {"categorias": categorias})
+    if request.method == "GET":
+        formulario = CriarPlanoForm()
+        categorias = list(Categoria.objects.all())
+        categorias = random.sample(categorias, 5)
+        context = {
+            'form': formulario ,
+            "categorias": categorias
+        }
+        return render(request, "criarPlano.html", context=context)
+    else:
+        titulo = request.POST['titulo']
+        descricao = request.POST['descricao']
+        visibilidade = request.POST['visibilidade']
+        novoPlano = PlanoDeEstudo.objects.create(titulo=titulo, descricao=descricao, visibilidade=visibilidade)
+        novoPlano.save()
+        return home(request)
+

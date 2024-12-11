@@ -12,12 +12,11 @@ class Usuario(models.Model):
         return self.nome
 
 class PlanoDeEstudo(models.Model):
-    identificacao = models.IntegerField()
-    titulo = models.CharField(max_length=200)
-    descricao = models.CharField(max_length=500)
-    avaliacao = models.FloatField()
-    visibilidade = models.CharField(max_length=50)
-    data = models.DateField(max_length=10)
+    identificacao = models.IntegerField(default=0)
+    titulo = models.CharField(max_length=200, default="")
+    descricao = models.CharField(max_length=500, default="")
+    avaliacao = models.FloatField(default=10)
+    visibilidade = models.IntegerField(default=0)
     nVisualizacoes = models.IntegerField(default=0)
     nFavoritos = models.IntegerField(default=0)
 
